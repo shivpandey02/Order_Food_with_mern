@@ -16,7 +16,7 @@ const Shop = () => {
     async function fetchData() {
       try {
         const response = await axios.get(
-          `https://order-food-with-mern.vercel.app/api/products`
+          `https://order-food-with-mern.vercel.app/api/dishes`
         );
         console.log(response.data);
         setProduct(response.data);
